@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_donate"/>
+
+        <TextView
+            android:layout_below="@id/logo"
+            android:id="@+id/tv_username"
+            android:layout_marginTop="70dp"
+            android:textSize="8pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Username: Juan"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_name"
+            android:textSize="8pt"
+            android:layout_below="@id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Name: Juan"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_current_balance"
+            android:textSize="8pt"
+            android:layout_below="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Current Balance: ₱ 100"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_points"
+            android:textSize="8pt"
+            android:layout_below="@id/tv_current_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Points: 100"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/tv_points"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

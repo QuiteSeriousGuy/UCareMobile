@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.main.MainActivity">
+
+        <ImageView
+            android:layout_height="200dp"
+            android:background="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/ivImage"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_below="@id/ivImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Purpose Name"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_below="@id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:layout_marginLeft="15dp"
+            android:text="Purpose Date" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_below="@id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:text="After battering the northern Philippines last weekend, with more than 275mm of rain falling over the town of Tuguegarao in 24 hours, Nida made landfall near Hong Kong Tuesday morning, rated as the equivalent of a category 1 hurricane. Thousands of people were evacuated from offshore oil rigs, as well as from construction sites, and headed to tunnels and bridges in the city. Hong Kong Observatory recorded 121mm of rain on Tuesday." />
+
+    </RelativeLayout>
+</ScrollView>

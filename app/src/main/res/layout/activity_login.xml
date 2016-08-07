@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ucare"/>
+
+        <TextView
+            android:layout_below="@id/logo"
+            android:id="@+id/text1"
+            android:layout_marginTop="80dp"
+            android:textSize="8pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Username"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_below="@+id/text1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/text2"
+            android:textSize="8pt"
+            android:layout_below="@id/et_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Password"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_below="@+id/text2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/et_password"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
